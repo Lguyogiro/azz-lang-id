@@ -11,7 +11,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device)
 
 
-train_set = NahuaudioDataset("/N/slate/pughrob/repos/.../clips")
+train_set = NahuaudioDataset()
 test_set = NahuaudioDataset()
 waveform, sample_rate, label, speaker_id, utterance_number = train_set[0]
 
